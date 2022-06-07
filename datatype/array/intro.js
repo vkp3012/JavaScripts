@@ -63,3 +63,44 @@ console.log(fruits5[-1]);  //undefined - because negative index is not working i
 // same as fruits[fruits.length-1]
 let fruits6 =["Apple","Orange","Plum"];
 console.log(fruits6.at(-1));// Plum
+
+/*----------------new array-----------------*/
+
+console.log("----------new array----------------");
+
+//new array()
+let arr7 = new Array("Apple","Pear","etc");
+console.log(arr7);
+
+
+
+let arr8 =new Array(2);// will it create an array of [2] ?
+console.log(arr8[0]);// undefined! no elements.
+console.log(arr8.length );// length 2
+
+
+/*-------------------------Multidimensional arrays-----------------*/
+console.log("-----------Multidimensional arrays-------------");
+
+//Multidimensional arrays
+let matrix =[[1,2,3],[4,5,6],[7,8,9]];
+console.log(matrix[1][1]);// 5, the central element
+
+
+/*-----------------toString----------------*/
+
+console.log("---------------toString----------------");
+
+//toString
+let arr9 =[1,2,3];
+console.log(arr9 );// 1,2,3
+console.log(String(arr9)==='1,2,3');// true
+
+console.log([]+1);// "1"
+console.log([1]+1);// "11"
+console.log([1,2]+1);// "1,21"
+
+
+console.log(""+1);// "1"
+console.log("1"+1);// "11"
+console.log("1,2"+1);// "1,21"
