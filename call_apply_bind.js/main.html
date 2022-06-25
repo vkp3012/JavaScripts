@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(14, 93, 231);
+        }
+
+        .call ,.apply , .bind{
+            padding: 2rem;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="call">
+        <h1 class="call1">Call</h1>
+        <p>The call() method calls a function with a given this value and arguments provided individually.</p>
+    </div>
+
+    <div class="apply">
+        <h1 class="apply1">
+            apply
+        </h1>
+        <p>call() and apply() serve the exact same purpose. The only difference between how they work is that call() 
+            expects all parameters to be passed in individually,
+            whereas apply() expects an array of all of our parameters.
+        </p>
+    </div>
+
+    <div class="bind">
+        <h1 class="bind">
+            Bind
+        </h1>
+        <p>The bind() method creates a new function that, when called, has its this keyword set to the provided value. 
+            (It actually talks about even more stuff, but we’ll leave that for another time :) )
+
+            This is extremely powerful. It let’s us explicitly define the value of this when calling a function. 
+        </p>
+    </div>
+    <script src="./call_apply_bind.js"></script>
+</body>
+</html>
