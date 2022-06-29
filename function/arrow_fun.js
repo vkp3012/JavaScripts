@@ -8,20 +8,26 @@ let sum = (a,b) => a + b;
         return a + b;
     };
 */
-console.log(sum(1,2));// 3
+console.log(sum(1,2)); //output --> 3
 
 
 
 let double = n => n * 2;
-// roughly the same as: let double = function(n) { return n * 2 }
 
-console.log( double(3) ); // 6
+/* 
+roughly the same as: 
+  let double = function(n) {
+    return n * 2 
+  }
+*/
+
+console.log( double(3) ); //output --> 6
 
 
 //------------------------------------------------
 
-let sayHi = () =>console.log("Hello!");
-sayHi();
+let sayHi = () => console.log("Hello!");
+sayHi();   //output --> Hello!
 
 //---------------------------------
 
@@ -35,8 +41,25 @@ welcome();
 
 
 let sum1 = (a, b) => {  // the curly brace opens a multiline function
-    let result = a + b;
-    return result; // if we use curly braces, then we need an explicit "return"
-  };
+  let result = a + b;
+  return result; // if we use curly braces, then we need an explicit "return"
+};
   
-console.log( sum1(1, 2) ); // 3
+console.log(sum1(1, 2) ); //output --> 3
+
+//---------------------------------------------------------------------------
+let doingArrowStuff  =  x  => console.log(x);
+						
+// And invoke it like this:
+doingArrowStuff("Great!");  
+
+//---------------------------------------------------
+
+const arr = ["squirrel", "alpaca", "buddy"];
+						 
+arr.forEach(e => console.log(e));
+
+// It outputs:
+        // squirrel
+        // alpaca
+        // Buddy
