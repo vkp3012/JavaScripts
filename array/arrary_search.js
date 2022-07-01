@@ -17,6 +17,13 @@ console.log(arr13.indexOf(NaN));         // -1 (should be 0, but === equality do
 console.log(arr13.includes(NaN));       // true (correct)
 
 
+
+
+arr8 = [ 2, 6, 7, 8 ];
+let findIndex3 = arr8.indexOf(6, 2);
+console.log(findIndex3);
+
+
 /*--------------find and findIndex----------------*/
 console.log("----------find and findIndex-----------------");
 
