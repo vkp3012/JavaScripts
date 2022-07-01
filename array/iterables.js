@@ -12,7 +12,10 @@ let range = {
     from: 1,
     to: 5
 }; 
+
+
 // 1. call to for..of initially calls this
+
 range[Symbol.iterator] = function() {// ...it returns the iterator object:
     // 2. Onward, for..of works only with the iterator object below, asking it for next values
     return {
@@ -117,8 +120,8 @@ console.log(arr.pop());// World (method works)
 
 
 //Array.from(obj[,mapFn,thisArg])
-let str2 ='𝒳😂';// splits str into array of characters
-let chars =Array.from(str2);
+let str2 ='𝒳😂';                            // splits str into array of characters
+let chars = Array.from(str2);
 console.log(chars[0]);// 𝒳
 console.log(chars[1]);// 😂
 console.log(chars.length);// 2
