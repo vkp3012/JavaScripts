@@ -1,6 +1,8 @@
 
 //create a new map
 let map = new Map();
+
+//set the map...
 map.set('1','str1');// a string key
 map.set(1,'num1');// a numeric key
 map.set(true,'bool1');// a boolean key
@@ -10,16 +12,39 @@ map.set(true,'bool1');// a boolean key
 console.log(map.get(1));// 'num1'
 console.log(map.get('1'));// 'str1'
 console.log(map.size);// 3
+console.log("-------------------------------------------------");
 
+
+let myArray = [1,2,3,4,5]
+
+let newArray = myArray.map(function(x){
+  return x*x;
+})
+
+console.log(myArray);
+console.log(newArray);
+
+//filter
+
+let filterArray = myArray.filter(function(x){
+  return x%2 === 0;
+})
+
+console.log(filterArray);
+
+
+console.log("-------------------------------------------------");
 
 let john ={
     name:"John"
 };
+
 // for every user, let's store their visits count
 let visitsCountMap = new Map();// john is the key for the map
-visitsCountMap.set(john,123);
-console.log(visitsCountMap.get(john));// 123
 
+visitsCountMap.set(john,123);
+console.log(visitsCountMap.get(john)); // 123
+console.log("-------------------------------------------------");
 
 let john1 ={
     name:"John"
@@ -30,10 +55,13 @@ let ben = {
 };
 
 let visitsCountObj = {};// try to use an object
+
 visitsCountObj[ben] = 234;// try to use ben object as the key
 visitsCountObj[john1] = 123;// try to use john object as the key, ben object will get replaced
 // That's what got written!
 console.log(visitsCountObj["[object Object]"]); // 123
+
+console.log("-------------------------------------------------");
 
 //---------------------------------
 
@@ -59,19 +87,25 @@ let recipeMap = new Map([
   }
 
 
+
 // runs the function for each (key, value) pair
-recipeMap.forEach( (value, key, map) => {
+recipeMap.forEach( (value, key) => {
     console.log(`${key}: ${value}`); // cucumber: 500 etc
 });
 
+console.log("-------------------------------------------------");
+
 
 // array of [key, value] pairs
-let map1 =new Map([
+let map1 = new Map([
     ['1','str1'],
     [1,'num1'],
     [true,'bool1']
 ]);
-console.log(map1.get('1'));// str1
+
+console.log(map1.get('1')); // str1
+
+console.log("-------------------------------------------------");
 
 
 let obj = {
@@ -82,6 +116,7 @@ let obj = {
 let map2 = new Map(Object.entries(obj));
 console.log(map2.get('name'));    // John
 
+console.log("-------------------------------------------------");
 
 let prices = Object.fromEntries([
     ['banana',1],
@@ -91,6 +126,8 @@ let prices = Object.fromEntries([
 console.log(prices.orange);// 2
 
 
+console.log("-------------------------------------------------");
+
 let map3 =new Map();
 map3.set('banana',1);
 map3.set('orange',2);
@@ -99,3 +136,5 @@ let obj1 = Object.fromEntries(map3.entries());// make a plain object (*)
 // done!
 // obj = { banana: 1, orange: 2, meat: 4 }
 console.log(obj1.orange);// 2
+
+console.log("-------------------------------------------------");

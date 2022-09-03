@@ -2,11 +2,11 @@
 //unary operater
 let x = 1;
 x = -x;
-console.log(x );// -1, unary negation was applied
+console.log(x);// -1, unary negation was applied
 
 //binary operater
 let x1 = 1,y = 3;
-console.log(y -x );// 2, binary minus subtracts values
+console.log(y - x1 );// 2, binary minus subtracts values
 
 
 //remender
@@ -38,7 +38,7 @@ console.log(2+2+'1');// "41" and not "221"
 console.log('1'+2+2);// "122" and not "14"
 
 
-console.log(6-'2');// 4, converts '2' to a number
+console.log(6 -'2');// 4, converts '2' to a number
 console.log('6'/'2');// 3, converts both operands to numbers
 
 
@@ -47,6 +47,7 @@ console.log('6'/'2');// 3, converts both operands to numbers
 // No effect on numbers
 let x2 =1;
 console.log(+x2 );// 1
+
 let y1 =-2;
 console.log(+y1 );// -2
 

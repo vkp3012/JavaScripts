@@ -1,7 +1,5 @@
-console.log("Hello Vivek");
-
 const students = [
-    {name:"harry", subject:"JavaScript"},
+    {name:"Harry", subject:"JavaScript"},
     {name:"Rohan",subject:"Machine Learning"}
 ]
 
@@ -19,14 +17,14 @@ function getStudents(){
 
         students.forEach(function(student){
            str += `
-                <li> "${student.name}" </li>
+                <li> '${student.name}' </li>
            `;
         });
 
         document.getElementById('students').innerText = str;
 
         console.log("Students have been fetched");
-    },1000);
+    },2000);
 }
 
 let newStudent={name:"Sunny",subject:"Python"};

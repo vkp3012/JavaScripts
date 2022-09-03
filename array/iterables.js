@@ -32,6 +32,8 @@ range[Symbol.iterator] = function() {// ...it returns the iterator object:
       }
     };
 }; 
+
+
 // now it works!
 for (let num of range) {
     console.log(num); // 1, then 2, 3, 4, 5
