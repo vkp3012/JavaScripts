@@ -19,12 +19,12 @@ while(k)console.log(k--);
 
 console.log("--------------do...while------------------");
 //do...while
-leti =0;
+let l = 0;
 do{
-    console.log(i );
-    i++;
+    console.log(l);
+    l++;
 }
-while(i < 3);
+while(l < 3);
 
 
 console.log("--------------for loop---------------");

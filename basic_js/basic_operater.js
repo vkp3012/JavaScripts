@@ -1,10 +1,10 @@
 
-//unary operater
+//unary operator
 let x = 1;
 x = -x;
 console.log(x);// -1, unary negation was applied
 
-//binary operater
+//binary operator
 let x1 = 1,y = 3;
 console.log(y - x1 );// 2, binary minus subtracts values
 
@@ -26,7 +26,7 @@ console.log(8**(1/3));// 2 (power of 1/3 is the same as a cubic root)
 
 //String concatenation with binary +
 let s ="my"+"string";
-console.log(s);// mystring
+console.log(s);// my string
 
 console.log('1'+2);// "12"
 console.log(2+'1');// "21"

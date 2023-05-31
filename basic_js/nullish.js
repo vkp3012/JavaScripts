@@ -3,11 +3,11 @@
 
 
 let user;
-console.log(user ??"Anonymous");// Anonymous (user not defined)
+console.log(user ?? "Anonymous");// Anonymous (user not defined)
 
 
 let user1 ="John";
-console.log(user1 ??"Anonymous");// John (user defined)
+console.log(user1 ?? "Anonymous");// John (user defined)
 
 
 // let firstName =null;
@@ -20,8 +20,8 @@ console.log(user1 ??"Anonymous");// John (user defined)
 
 let firstName =null;
 let lastName =null;
-let nickName ="Supercoder";// shows the first truthy value:
-console.log(firstName ||lastName ||nickName ||"Anonymous");// Supercoder
+let nickName ="SuperCoder";// shows the first truthy value:
+console.log(firstName || lastName || nickName || "Anonymous"); // SuperCoder
 
 
 let height =0;
